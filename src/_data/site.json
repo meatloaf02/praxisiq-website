@@ -1,0 +1,18 @@
+{
+  "name": "PraxisIQ",
+  "tagline": "Intelligence, applied.",
+  "url": "https://praxisiq.studio",
+  "email": "marco@praxisiq.studio",
+  "description": "AI, product strategy, and higher education consulting. We help organizations turn insight into implementation.",
+  "formspreeId": "xzdynvek",
+  "linkedin": {
+    "personal": "https://www.linkedin.com/in/marcosiliezar/",
+    "company": "https://linkedin.com/company/praxisiq-studio"
+  },
+  "nav": [
+    { "label": "Products", "url": "/products/" },
+    { "label": "Services", "url": "/services/" },
+    { "label": "Research", "url": "/research/" },
+    { "label": "About", "url": "/about/" }
+  ]
+}

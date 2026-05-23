@@ -1,0 +1,17 @@
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <a href="/" class="footer-logo" aria-label="{{ site.name }} home">
+        <span class="footer-praxis">Praxis</span><span class="footer-iq">IQ</span>
+      </a>
+      <span class="footer-tagline">{{ site.tagline }}</span>
+    </div>
+    <ul class="footer-links">
+      {% for item in site.nav %}
+        <li><a href="{{ item.url }}">{{ item.label }}</a></li>
+      {% endfor %}
+      <li><a href="/about/#contact">Contact</a></li>
+    </ul>
+    <p class="footer-copy">&copy; {% year %} {{ site.name }} LLC. All rights reserved.</p>
+  </div>
+</footer>

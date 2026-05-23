@@ -1,0 +1,25 @@
+---
+layout: layouts/base.njk
+---
+
+<section class="page-header">
+  <div class="container">
+    {% if badge %}
+      <span class="card-badge card-badge--{{ badgeType or 'enterprise' }}" style="margin-bottom: 0.75rem;">{{ badge }}</span>
+    {% endif %}
+    <h1 class="page-title">{{ title }}</h1>
+    {% if date %}
+      <p class="text-muted" style="margin-top: 0.5rem; font-size: 0.875rem;">{{ date | dateFormat }}</p>
+    {% endif %}
+  </div>
+</section>
+
+<section class="section">
+  <div class="container" style="max-width: 720px;">
+    <article>
+      {{ content | safe }}
+    </article>
+    <hr style="border: none; border-top: 1px solid var(--n100); margin: 3rem 0;">
+    <p><a href="/research/">&larr; Back to Research</a></p>
+  </div>
+</section>
