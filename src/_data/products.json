@@ -1,0 +1,121 @@
+{
+  "headline": "Smarter Scheduling. Stronger Revenue. Full Compliance.",
+  "subheadline": "One platform that optimizes how your institution allocates its two scarcest resources: space and money.",
+  "intro": "Higher education institutions are under unprecedented financial pressure. The tools they use to manage scheduling, student billing, and financial aid were built for a different era — they record decisions, they don't improve them. Allocate is an AI-powered decision platform that gives administrators the analytical power of an operations research team through a simple conversational interface.",
+  "differentiators": [
+    {
+      "id": "sandbox",
+      "title": "Interactive Sandbox, Not Static Reports",
+      "description": "Current tools build one schedule and hand it to you, or apply one set of billing rules to every student. Allocate lets you explore alternatives, test scenarios, and compare outcomes before you commit."
+    },
+    {
+      "id": "compliance",
+      "title": "Compliance Built In, Not Bolted On",
+      "description": "Regulatory constraints are encoded as hard controls that prevent prohibited actions before they happen — rather than detecting violations after the fact."
+    },
+    {
+      "id": "explainability",
+      "title": "Transparent Reasoning You Can Audit",
+      "description": "When the platform recommends an action, it tells you exactly why — what factors drove the recommendation, what would change it, and what the alternatives were. Every recommendation is logged with an audit trail."
+    },
+    {
+      "id": "onboarding",
+      "title": "Days to Deploy, Not Months",
+      "description": "The platform ingests flat files your institution already knows how to export. No API integration required. No IT security review for direct system access. Export your data, upload it, and the platform is live."
+    },
+    {
+      "id": "cross-domain",
+      "title": "Cross-Domain Intelligence",
+      "description": "Scheduling, receivables, and financial aid share data on one platform. A scheduling change that delays a student's graduation shows up as increased financial risk. A payment plan timed to aid disbursement dates performs better than one that treats billing as independent of academics."
+    }
+  ],
+  "modules": [
+    {
+      "id": "scheduling",
+      "name": "Scheduling Optimization",
+      "icon": "calendar",
+      "tagline": "Build better schedules in minutes, not weeks",
+      "description": "Course scheduling is one of the most complex logistical challenges on a campus — hundreds of sections, dozens of rooms and instructors, and thousands of student enrollment patterns to balance. Allocate replaces weeks of manual optimization with an interactive scheduling engine that lets you simulate alternatives and see the impact of every change before you commit.",
+      "capabilities": [
+        {
+          "name": "Scenario Simulation",
+          "description": "Explore hundreds of scheduling alternatives. Test the impact of adding sections, changing rooms, or adjusting time slots before committing."
+        },
+        {
+          "name": "Conflict Detection",
+          "description": "Identify student enrollment conflicts, instructor overlaps, and room bottlenecks before registration opens."
+        },
+        {
+          "name": "Resilience Scoring",
+          "description": "Simulate common mid-semester disruptions and rate each schedule's ability to absorb them without cascading failures."
+        },
+        {
+          "name": "Campus Transit Analysis",
+          "description": "Factor in walking times between buildings to prevent infeasible back-to-back class assignments."
+        },
+        {
+          "name": "Room Utilization Optimization",
+          "description": "Balance enrollment across available spaces to eliminate simultaneous overcrowding and underuse."
+        }
+      ]
+    },
+    {
+      "id": "receivables",
+      "name": "Student Receivables Control & Optimization",
+      "icon": "shield-check",
+      "tagline": "Protect revenue and students with compliant receivables management",
+      "description": "Tuition payment plans are used by millions of students each term, yet most institutions manage them with tools that can't ensure consistent disclosures, optimize intervention timing, or prevent regulatory violations. Allocate provides a compliance governance layer paired with an optimization engine that finds the best intervention strategy for each student account — within regulatory boundaries.",
+      "capabilities": [
+        {
+          "name": "Compliance Governance",
+          "description": "Regulatory constraints are encoded as hard controls — the platform prevents prohibited actions before they happen rather than flagging violations after the fact."
+        },
+        {
+          "name": "Intervention Optimization",
+          "description": "Determine the optimal moment to send reminders, offer plan restructuring, or escalate — based on each student's payment history, aid schedule, and enrollment pattern."
+        },
+        {
+          "name": "Early Delinquency Intervention",
+          "description": "Identify students likely to miss payments before they miss them, enabling proactive outreach that costs less than reactive collections."
+        },
+        {
+          "name": "Hold Impact Forecasting",
+          "description": "Predict the retention impact of applying a financial hold before it's applied — quantifying the tradeoff between collection pressure and enrollment revenue."
+        },
+        {
+          "name": "Portfolio Dashboards",
+          "description": "Monitor delinquency trends, fee incidence, dispute rates, and regulatory risk across your entire student receivables portfolio."
+        }
+      ]
+    },
+    {
+      "id": "financial-aid",
+      "name": "Financial Aid Distribution Optimization",
+      "icon": "chart-pie",
+      "tagline": "Maximize enrollment yield and retention with smarter aid allocation",
+      "description": "Every dollar of institutional aid awarded to one student is a dollar not available for another. Allocate treats financial aid packaging as the portfolio optimization problem it actually is — optimizing grants, scholarships, and tuition discounts across your student body to maximize enrollment yield and retention within budget constraints.",
+      "capabilities": [
+        {
+          "name": "Portfolio Optimization",
+          "description": "Optimize the distribution of institutional aid across the student body to maximize enrollment yield and retention within budget constraints."
+        },
+        {
+          "name": "Financial Vulnerability Modeling",
+          "description": "Build a holistic snapshot of each student's financial situation that goes beyond a single need number — capturing unmet need, external aid, work status, and payment history."
+        },
+        {
+          "name": "Dynamic Reallocation",
+          "description": "When a student's circumstances change mid-year, the system recommends real-time aid adjustments rather than waiting for the next packaging cycle."
+        },
+        {
+          "name": "Yield Modeling",
+          "description": "Predict which admitted students will enroll based on their aid package relative to competing offers. Identify where a marginal increase in aid has the highest conversion impact."
+        },
+        {
+          "name": "Retention-Linked Aid Strategy",
+          "description": "Identify students where a targeted aid intervention is the most cost-effective retention tool compared to the revenue lost if they withdraw."
+        }
+      ]
+    }
+  ]
+}

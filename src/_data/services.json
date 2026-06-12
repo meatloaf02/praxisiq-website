@@ -1,0 +1,52 @@
+{
+  "headline": "From Flat File to Live Platform",
+  "subheadline": "Allocate is designed for fast deployment with no IT integration required.",
+  "onboarding": {
+    "title": "How Onboarding Works",
+    "description": "Allocate ingests the flat files your institution already knows how to export — CSV exports from your SIS, ERP, or billing system. No API integration, no IT security review for direct system access, no months-long implementation project.",
+    "steps": [
+      {
+        "step": 1,
+        "title": "Export Your Data",
+        "description": "Pull standard CSV exports from the systems you already use. We provide templates that map to common SIS and ERP export formats."
+      },
+      {
+        "step": 2,
+        "title": "Configure Your Institution",
+        "description": "We set up your institutional parameters — room inventory, scheduling constraints, policy rules, and compliance requirements — during a guided onboarding session."
+      },
+      {
+        "step": 3,
+        "title": "Go Live",
+        "description": "Your team starts working with the platform immediately. No training certification required — the conversational interface means administrators interact in their own language."
+      }
+    ]
+  },
+  "approach": {
+    "title": "Built for Higher Education Operations",
+    "points": [
+      {
+        "title": "Modular Adoption",
+        "description": "Start with the module that solves your most pressing problem. Add capabilities as your needs evolve — each module is independently valuable and more powerful in combination."
+      },
+      {
+        "title": "No Technical Expertise Required",
+        "description": "The conversational interface translates plain-language questions into sophisticated analytical operations. Administrators interact with the platform the way they'd interact with an expert analyst."
+      },
+      {
+        "title": "Auditor-Grade Explainability",
+        "description": "Every recommendation includes the reasoning behind it, the factors that drove it, and a logged audit trail. The AI advises; your team decides."
+      },
+      {
+        "title": "Compliance by Default",
+        "description": "Regulatory requirements are encoded into the platform as hard constraints, not optional add-ons. The system prevents compliance violations before they happen."
+      }
+    ]
+  },
+  "cta": {
+    "heading": "Ready to See It in Action?",
+    "description": "We work with a small number of institutional partners to ensure every deployment gets the attention it deserves. If your institution is facing scheduling complexity, receivables pressure, or compliance risk, let's talk.",
+    "button_text": "Get in Touch",
+    "button_link": "/about/#contact"
+  }
+}

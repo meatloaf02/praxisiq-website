@@ -7,35 +7,47 @@ description: Frameworks, assessments, and toolkits from PraxisIQ — ready-to-de
 <section class="page-header">
   <div class="container">
     <p class="tagline">Products</p>
-    <h1 class="page-title">Frameworks and tools — ready to deploy.</h1>
-    <p class="page-subtitle">Not every engagement needs to start from scratch. These are repeatable, battle-tested deliverables drawn from real consulting work — designed to accelerate your AI initiatives before the first meeting.</p>
+    <h1 class="page-title">{{ products.headline }}</h1>
+    <p class="page-subtitle">{{ products.subheadline }}</p>
+    <p style="max-width: 760px; margin-top: 1.5rem; color: var(--n700);">{{ products.intro }}</p>
   </div>
 </section>
 
-<section class="section" id="ai-readiness">
+<section class="section section--subtle" id="differentiators">
   <div class="container">
+    <p class="tagline">Why Allocate</p>
+    <h2 class="section-heading" style="margin-bottom: 2rem;">What makes the platform different</h2>
     <div class="card-grid">
-      <div class="card reveal">
-        <span class="card-badge card-badge--enterprise">Assessment</span>
-        <h3>AI readiness assessment</h3>
-        <p>A structured diagnostic that maps your organization's current AI maturity across five dimensions: data infrastructure, talent and skills, leadership alignment, use case pipeline, and governance readiness. You get a scored report with prioritized recommendations — not a generic checklist.</p>
-        <p style="margin-top: 1.25rem; color: var(--n500); font-size: 0.875rem;">Ideal for: CIOs, CTOs, and provosts starting or resetting their AI strategy.</p>
-      </div>
-      <div class="card reveal">
-        <span class="card-badge card-badge--startup">Framework</span>
-        <h3>AI strategy playbook</h3>
-        <p>A complete strategy framework with templates for opportunity mapping, build-vs-buy analysis, vendor evaluation, risk assessment, and executive communication. Includes the same tools used in our consulting engagements — packaged for teams who want to move independently.</p>
-        <p style="margin-top: 1.25rem; color: var(--n500); font-size: 0.875rem;">Ideal for: Product leaders and strategy teams running their own AI planning process.</p>
-      </div>
-      <div class="card reveal">
-        <span class="card-badge card-badge--edu">Toolkit</span>
-        <h3>Higher ed AI integration toolkit</h3>
-        <p>Purpose-built for universities and colleges navigating AI adoption. Covers curriculum integration, academic integrity policy templates, faculty workshop designs, student-facing AI literacy modules, and administrative automation playbooks.</p>
-        <p style="margin-top: 1.25rem; color: var(--n500); font-size: 0.875rem;">Ideal for: Deans, provosts, and academic technologists leading institutional AI initiatives.</p>
-      </div>
+      {% for differentiator in products.differentiators %}
+        <div class="card reveal">
+          <span class="card-badge card-badge--{% if loop.index0 % 3 == 0 %}enterprise{% elif loop.index0 % 3 == 1 %}startup{% else %}edu{% endif %}">{{ differentiator.id }}</span>
+          <h3>{{ differentiator.title }}</h3>
+          <p>{{ differentiator.description }}</p>
+        </div>
+      {% endfor %}
     </div>
   </div>
 </section>
+
+{% for module in products.modules %}
+  <section class="section{% if loop.index is even %} section--subtle{% endif %}" id="{{ module.id }}">
+    <div class="container">
+      <p class="tagline">Module {{ loop.index }}</p>
+      <h2 class="section-heading">{{ module.name }}</h2>
+      <p class="section-subheading">{{ module.tagline }}</p>
+      <p style="max-width: 760px; margin: 1rem 0 2rem; color: var(--n700);">{{ module.description }}</p>
+      <div class="card-grid" style="grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));">
+        {% for capability in module.capabilities %}
+          <div class="card reveal">
+            <span class="card-badge card-badge--{% if loop.index0 % 3 == 0 %}enterprise{% elif loop.index0 % 3 == 1 %}startup{% else %}edu{% endif %}">Capability</span>
+            <h3 style="font-size: 1.1rem;">{{ capability.name }}</h3>
+            <p>{{ capability.description }}</p>
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+  </section>
+{% endfor %}
 
 <section class="section section--subtle">
   <div class="container text-center">
