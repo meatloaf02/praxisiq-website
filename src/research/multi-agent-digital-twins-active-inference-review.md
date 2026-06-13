@@ -13,7 +13,6 @@ tags:
   - peer-review
 keywords: "active inference, digital twins, multi-agent systems, expected free energy, reinforcement learning, decentralized generative models, streaming machine learning, agent coordination"
 authors: "Marco Siliezar"
-venue: "Graduate coursework — paper review"
 abstract: "A critical review of Mancinelli et al. (2026) on multi-agent digital twins using active inference, weighing its contribution to agent coordination against computational cost."
 badge: "Peer Review"
 badgeType: "startup"

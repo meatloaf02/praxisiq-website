@@ -14,14 +14,12 @@ tags:
   - data-science
 keywords: "knowledge graph, SEC filings NLP, AI intensity index, corporate disclosure analysis, enterprise SaaS, financial signal, Granger causality, AI washing, longitudinal text analysis"
 authors: "Marco Siliezar"
-venue: "Northwestern University — MSDS 459, Knowledge Engineering"
 repo: "https://github.com/meatloaf02/KG"
 abstract: "A single-firm longitudinal knowledge graph that tracks the evolution of AI-related language in Workday's disclosures and tests whether that language predicts returns."
 badge: "Knowledge Graphs"
 badgeType: "enterprise"
 ---
 
-**Northwestern University · MSDS 459 (Knowledge Engineering)**
 [View the code on GitHub →](https://github.com/meatloaf02/KG)
 
 ## The question

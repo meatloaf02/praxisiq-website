@@ -14,14 +14,12 @@ tags:
   - data-science
 keywords: "curriculum labor market alignment, vocational education NLP, skill extraction, TF-IDF feature fusion, semantic similarity, information retrieval, program-job matching, higher education data science"
 authors: "Marco Siliezar"
-venue: "Northwestern University — MSDS 453, Natural Language Processing"
 repo: "https://github.com/meatloaf02/nlp-domain-alignment"
 abstract: "A semantic information-retrieval pipeline that quantifies how closely vocational program curricula align with employer demand expressed in online job postings."
 badge: "NLP"
 badgeType: "startup"
 ---
 
-**Northwestern University · MSDS 453 (Natural Language Processing)**
 [View the code on GitHub →](https://github.com/meatloaf02/nlp-domain-alignment)
 
 ## The question
