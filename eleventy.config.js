@@ -20,13 +20,27 @@ export default function(eleventyConfig) {
     });
   });
 
+  eleventyConfig.addCollection("research", (collectionApi) => {
+    return collectionApi.getFilteredByTag("research").sort((a, b) => {
+      return b.date - a.date;
+    });
+  });
+
   // Year shortcode for copyright
   eleventyConfig.addShortcode("year", () => `${new Date().getFullYear()}`);
 
   // Date filter for templates
   eleventyConfig.addFilter("dateFormat", (dateObj) => {
     const d = new Date(dateObj);
-    return d.toLocaleDateString("en-US", { year: "numeric", month: "long", day: "numeric" });
+    return d.toLocaleDateString("en-US", { year: "numeric", month: "long", day: "numeric", timeZone: "UTC" });
+  });
+
+  eleventyConfig.addFilter("htmlDateString", (dateObj) => {
+    return new Date(dateObj).toISOString().slice(0, 10);
+  });
+
+  eleventyConfig.addFilter("json", (value) => {
+    return JSON.stringify(value);
   });
 
   return {

@@ -11,6 +11,12 @@ layout: layouts/base.njk
     {% if date %}
       <p class="text-muted" style="margin-top: 0.5rem; font-size: 0.875rem;">{{ date | dateFormat }}</p>
     {% endif %}
+    {% if venue %}
+      <p class="section-subheading" style="margin-top: 0.75rem;">{{ venue }}</p>
+    {% endif %}
+    {% if abstract %}
+      <p class="page-subtitle" style="margin-top: 1rem;">{{ abstract }}</p>
+    {% endif %}
   </div>
 </section>
 
@@ -23,3 +29,25 @@ layout: layouts/base.njk
     <p><a href="/research/">&larr; Back to Research</a></p>
   </div>
 </section>
+
+{% if researchItem %}
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ScholarlyArticle",
+    "headline": {{ title | json | safe }},
+    "author": {
+      "@type": "Person",
+      "name": {{ (authors or "Marco Siliezar") | json | safe }}
+    },
+    "datePublished": "{{ date | htmlDateString }}",
+    "description": {{ (description or abstract or summary or site.description) | json | safe }},
+    "keywords": {{ (keywords or "") | json | safe }},
+    "url": "{{ site.url }}{{ page.url }}",
+    "publisher": {
+      "@type": "Organization",
+      "name": {{ site.name | json | safe }}
+    }
+  }
+  </script>
+{% endif %}

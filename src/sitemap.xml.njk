@@ -1,0 +1,17 @@
+---
+permalink: /sitemap.xml
+eleventyExcludeFromCollections: true
+---
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+{% for pageEntry in collections.all %}
+  {% if pageEntry.url and not pageEntry.url.startsWith('/assets/') %}
+  <url>
+    <loc>{{ site.url }}{{ pageEntry.url }}</loc>
+    {% if pageEntry.date %}
+    <lastmod>{{ pageEntry.date | htmlDateString }}</lastmod>
+    {% endif %}
+  </url>
+  {% endif %}
+{% endfor %}
+</urlset>

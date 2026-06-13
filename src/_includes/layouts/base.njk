@@ -3,15 +3,18 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>{{ title }} — {{ site.name }}</title>
+  <title>{{ seoTitle or title }} — {{ site.name }}</title>
   <meta name="description" content="{{ description or site.description }}">
   <link rel="canonical" href="{{ site.url }}{{ page.url }}">
 
   <!-- Open Graph -->
-  <meta property="og:title" content="{{ title }} — {{ site.name }}">
+  <meta property="og:title" content="{{ seoTitle or title }} — {{ site.name }}">
   <meta property="og:description" content="{{ description or site.description }}">
   <meta property="og:type" content="website">
   <meta property="og:url" content="{{ site.url }}{{ page.url }}">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="{{ seoTitle or title }} — {{ site.name }}">
+  <meta name="twitter:description" content="{{ description or site.description }}">
 
   <!-- Favicon — inline SVG PQ monogram -->
   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%231B2B5B'/%3E%3Ctext x='4' y='23' font-family='Georgia,serif' font-size='20' font-weight='700' fill='%23B5C4E0'%3EP%3C/text%3E%3Ctext x='17' y='23' font-family='Georgia,serif' font-size='20' font-weight='300' fill='%2324C69A'%3EQ%3C/text%3E%3C/svg%3E">
